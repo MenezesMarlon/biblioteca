@@ -1,4 +1,4 @@
-package entidades;
+package entities;
 
 public class Livro {
     
@@ -30,7 +30,7 @@ public class Livro {
         return disponibilidade;
     }
 
-    
+
 
 
 
