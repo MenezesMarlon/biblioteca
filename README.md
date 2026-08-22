@@ -1,18 +1,50 @@
-## Getting Started
+# 📚 Sistema de Biblioteca
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Sistema desenvolvido em Java para gerenciamento de livros, criado como projeto
+de estudo para praticar Programação Orientada a Objetos e versionamento com Git.
 
-## Folder Structure
+## 🎯 Objetivo
 
-The workspace contains two folders by default, where:
+Estudei java durante a minha primeira graduação, porém como estou começando uma segunda graduação, achei que seria interessante remover meus projetos e começar eles do zero.
+O projeto tem como objetivo praticar conceitos fundamentais de POO em Java,
+como:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Classes e objetos
+- Encapsulamento
+- Construtores
+- Modificadores de acesso
+- "final"
+- Composição/associação entre objetos
+- Collections (`List` / `ArrayList`)
+- Manipulação de datas
+- Tratamento de exceções
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Além disso, o projeto é utilizado para praticar Git e GitHub.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 🚀 Funcionalidades
 
-## Dependency Management
+- [ ] Cadastro de livros
+- [ ] Consulta de livros
+- [ ] Controle de disponibilidade
+- [ ] Empréstimo de livros
+- [ ] Devolução de livros
+- [ ] Controle de usuários
+- [ ] Histórico de empréstimos
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 🛠️ Tecnologias utilizadas
+
+- Java
+- Git
+- GitHub
+
+## 📁 Estrutura do projeto
+
+src/
+├── application/
+│   └── Main.java
+│
+├── biblioteca/
+│   └── Biblioteca.java
+│
+└── entities/
+    └── Livro.java
