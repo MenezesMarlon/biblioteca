@@ -30,8 +30,20 @@ public class Livro {
         return disponibilidade;
     }
 
-    public String toString() {
-        return titulo;
+    public void emprestarLivro(){
 
     }
+
+    public void devolverLivro(){
+
+    }
+
+    public String toString() {
+    return "Livro{" +
+            "Titulo='" + titulo + '\'' +
+            ", Autor='" + autor + '\'' +
+            ", Ano de Publicacao=" + anoPublicacao +
+            ", Status=" + disponibilidade +
+            '}';
+}
 }
