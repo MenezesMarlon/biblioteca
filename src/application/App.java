@@ -17,6 +17,8 @@ public class App {
             System.out.println("");
             System.out.println("1 - Cadastrar Livro");
             System.out.println("2 - Consultar Livros");
+            System.out.println("3 - Emprestar Livros");
+            System.out.println("4 - Devolver Livros");
             System.out.println("0 - Sair");
             System.out.println("");
             System.out.print("Selecione uma opção: ");
@@ -40,6 +42,16 @@ public class App {
                     System.out.print("Digite o nome do livro: ");
                     titulo = scanner.nextLine();
                     biblioteca.consultarLivros(titulo);
+                    break;
+                case 3:
+                    System.out.print("Digite o nome do livro: ");
+                    titulo = scanner.nextLine();
+                    biblioteca.emprestarLivro(titulo);
+                    break;
+                case 4:
+                    System.out.print("Digite o nome do livro: ");
+                    titulo = scanner.nextLine();
+                    biblioteca.devolverLivro(titulo);
                     break;
                 case 0:
                     System.out.println("Saindo do sistema...");

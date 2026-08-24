@@ -30,20 +30,31 @@ public class Livro {
         return disponibilidade;
     }
 
-    public void emprestarLivro(){
-
+    public void emprestarLivro() {
+        if (disponibilidade) {
+            disponibilidade = false;
+            System.out.printf("Livro %s emprestado! %n", titulo);
+        } else{
+            System.out.println("Livro já se encontra emprestado");
+        }
     }
 
-    public void devolverLivro(){
-
+    public void devolverLivro() {
+        if(!disponibilidade){
+            disponibilidade = true;
+            System.out.printf("Livro %s devolvido!%n", titulo);
+        } else {
+            System.out.println("Livro já se encontra disponível para empréstimo!");
+        }
     }
 
     public String toString() {
-    return "Livro{" +
-            "Titulo='" + titulo + '\'' +
-            ", Autor='" + autor + '\'' +
-            ", Ano de Publicacao=" + anoPublicacao +
-            ", Status=" + disponibilidade +
-            '}';
-}
+        return "Livro{" +
+                "Titulo='" + titulo + '\'' +
+                ", Autor='" + autor + '\'' +
+                ", Ano de Publicacao=" + anoPublicacao +
+                ", Status=" + disponibilidade +
+                '}';
+    }
+
 }

@@ -15,10 +15,17 @@ public class Biblioteca {
     }
 
     public void consultarLivros(String titulo) {
+        boolean encontrado = false;
         for (Livro livro : livros) {
             if (livro.getTitulo().equalsIgnoreCase(titulo)) {
+                encontrado = true;
                 System.out.println(livro);
+                break;
             }
+
+        }
+        if (!encontrado) {
+            System.out.println("Livro não Encontrado");
         }
     }
 
@@ -26,6 +33,25 @@ public class Biblioteca {
         for (Livro livro : livros) {
             System.out.println(livro.getTitulo());
         }
+    }
+
+    public void emprestarLivro(String titulo) {
+        for (Livro livro : livros) {
+            if (livro.getTitulo().equalsIgnoreCase(titulo)) {
+                livro.emprestarLivro();
+                break;
+            }
+        }
+    }
+
+    public void devolverLivro(String titulo) {
+        for (Livro livro : livros) {
+            if (livro.getTitulo().equalsIgnoreCase(titulo)) {
+                livro.devolverLivro();
+                break;
+            }
+        }
+
     }
 
 }
