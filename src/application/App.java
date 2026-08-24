@@ -16,8 +16,7 @@ public class App {
             System.out.println("===== BIBLIOTECA =====");
             System.out.println("");
             System.out.println("1 - Cadastrar Livro");
-            System.out.println("2 - Consultar Livro");
-            System.out.println("3 - Lista de Livros");
+            System.out.println("2 - Consultar Livros");
             System.out.println("0 - Sair");
             System.out.println("");
             System.out.print("Selecione uma opção: ");
@@ -36,10 +35,11 @@ public class App {
                     biblioteca.cadastrarLivro(titulo, autor, anoPublicacao);
                     break;
                 case 2:
-                    biblioteca.consultarLivros();
-                    break;
-                case 3:
                     biblioteca.listarLivros();
+                    System.out.println();
+                    System.out.print("Digite o nome do livro: ");
+                    titulo = scanner.nextLine();
+                    biblioteca.consultarLivros(titulo);
                     break;
                 case 0:
                     System.out.println("Saindo do sistema...");

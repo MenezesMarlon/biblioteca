@@ -15,11 +15,17 @@ public class Biblioteca {
     }
 
     public void consultarLivros(String titulo) {
-        livros.stream();
+        for (Livro livro : livros) {
+            if (livro.getTitulo().equalsIgnoreCase(titulo)) {
+                System.out.println(livro);
+            }
+        }
     }
 
     public void listarLivros() {
-        livros.forEach(System.out::println);
+        for (Livro livro : livros) {
+            System.out.println(livro.getTitulo());
+        }
     }
 
 }
